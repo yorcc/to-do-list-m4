@@ -1,1 +1,101 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile-section">
+        <h2>Profile</h2>
+        <form id="profile-form">
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" placeholder="Enter your name">
+
+            <label for="position-input">Position:</label>
+            <input type="text" id="position-input" placeholder="Enter your position">
+
+            <button type="button" id="save-profile">Save Profile</button>
+        </form>
+
+        <table id="profile-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="name-display"></td>
+                    <td id="position-display"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo-section">
+        <h2>To-Do</h2>
+        <input type="text" id="task-input" placeholder="Enter your task">
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <input type="date" id="task-date" />
+        <button type="button" id="add-task">Add Task</button>
+
+        <table id="todo-table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Priority</th>
+                    <th>Date</th>
+                    <th>Status (done)</th>
+                    <th>Progress</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Delete All Button -->
+    <button type="button" id="delete-all">Delete All To-Do</button>
+
+    <!-- Done List Section -->
+    <section>
+        <h2>Done List</h2>
+        <table id="done-table">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Priority</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- History Section -->
+    <section>
+        <h2>Deleted To-Do</h2>
+        <ul id="history-list"></ul>
+        <button type="button" id="delete-history">Delete History</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

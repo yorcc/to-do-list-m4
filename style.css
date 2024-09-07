@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+#profile-form {
+    margin-bottom: 10px;
+}
+
+#profile-table,
+#todo-table,
+#done-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#profile-table th,
+#profile-table td,
+#todo-table th,
+#todo-table td,
+#done-table th,
+#done-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#profile-table th,
+#todo-table th,
+#done-table th {
+    background-color: #f2f2f2;
+}
+
+#task-input,
+#priority,
+button {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+#name-input,
+#position-input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#history-list li {
+    padding: 5px 0;
+}
